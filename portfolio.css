@@ -1,0 +1,261 @@
+body {
+	background-color:black;
+  color:#ffffff;
+  font-family: 'Press Start 2P', monospace;
+}
+
+
+#main, #header, #footer, #text {
+    max-width: 1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#text {
+    margin-top: -60px;
+    margin-bottom: 60px;
+}
+
+
+h1 {
+    font-size: 65px;
+    text-align:center;
+    -webkit-transform: scale(1, 2);
+    color:#ffff00;
+    background-color:#0000ff;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2{
+    margin-left: -35px;
+    -webkit-transform: scale(0.8, 2);
+    color:white;
+    text-transform: uppercase;
+    margin-bottom: -1px;
+}
+
+hr {
+    margin-top: 50px;
+    height:2px;
+    width:100%;
+    color: rgb(219,45,10);
+    background-color:rgb(219,45,10);
+    border:1px solid rgb(219,45,10);
+}
+
+h2 {
+    text-align: center;
+}
+
+h4 {  
+    
+    transform: scale(1, 2);
+    -webkit-transform: scale(1, 2);
+    color:#ffff00;
+    margin:0px;
+    padding:15px 0px;
+}
+
+h4 span {  
+    font-size: 15px;
+    background-color:#0000ff;
+    padding-left:50px; 
+    padding-right:50px;
+    padding-top: 0px;  
+}
+
+/* END OF HEADER AND TITILE */
+
+/* DISPLAY SECTION */
+
+h3 {
+    margin-left: -35px;
+    -webkit-transform: scale(0.8, 2);
+    color:white;
+    text-transform: uppercase;
+    margin-bottom: -1px;
+}
+
+ul {
+    list-style-type: none;
+    
+}
+  
+.blue {
+	font-size: 20px;
+  text-align:center;
+  color:#ffff00;
+  margin-top: px;
+}
+
+.mainbody {
+    max-width: 1000px;
+    margin-top: 40px; 
+    padding-bottom: 30px; 
+    border-top:3px solid rgb(219,45,10); 
+    border-bottom:3px solid rgb(219,45,10);
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 0px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 29%; /* IE10 */
+    flex: 20%;
+    max-width: 29%;
+    padding: 0 20px;
+  }
+  
+  .column img {
+    border:3px solid rgb(219,45,10);
+    margin-top: 20px;
+    vertical-align: middle;
+  }
+  
+@keyframes cf3FadeInOut {
+    0% {
+    opacity:1;
+  }
+  45% {
+  opacity:1;
+  }
+  55% {
+  opacity:0;
+  }
+  100% {
+  opacity:0;
+  }
+}
+    
+#cf3 img.top {
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate;
+}
+
+/* label {
+	margin: 2px 0 0 2px;
+	float: left;
+	cursor: pointer;
+	transition: all 0.5s;
+  width: 100%;
+  height: auto;
+  border: px solid #ffff00;
+  opacity: 0.6;   
+}   */
+ 
+
+/* footer */
+
+#footer {
+	padding-top: 10px;
+}
+
+#red, #green, #yellow, #blue {
+  width:25%;
+  display:inline;
+  border:0px;
+  float:left;
+  text-align:center;
+}
+
+#red {
+  color:#ff0000;
+}
+
+#green {
+  color:#00ff00;
+}
+
+#yellow {
+  color:#ffff00;
+}
+
+#blue {
+  color:#00ffff;
+}
+
+
+hr {
+    margin-top: 50px;
+    height:2px;
+    width:100%;
+    color: rgb(219,45,10);
+    background-color:rgb(219,45,10);
+    border:1px solid rgb(219,45,10);
+}
+
+h2 {
+    text-align: center;
+}
+
+
+@media (max-width: 800px) {
+
+    #header {
+        font-size: 12px;
+        text-align:right;
+        max-width:1000px;
+        padding-bottom: 30px;
+    }
+
+    .mainbody {
+        display: flex;
+        flex-direction: column;
+        max-width: 800px;
+        margin-top: 30px; 
+        padding-bottom: 30px; 
+        border-top:3px solid rgb(219,45,10);
+        border-bottom:3px solid rgb(219,45,10);
+    }
+
+    h1 {
+        font-size: 50px;
+        text-align:center;
+        -webkit-transform: scale(1, 2);
+        color:#ffff00;
+        background-color:#0000ff;
+        margin: 0 auto;
+    }
+
+#footer {
+      padding-top: 10px;
+      display: flex;
+      flex-direction: column;  
+      text-align: center; 
+}
+
+#red, #green, #yellow, #blue {
+      width:100%;
+      display:inline;
+      border:0px;
+      float:left;
+      text-align:center;
+      line-height: 25px;
+      font-size: 15px;
+    }
+.column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  
+   
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
